@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "testing-app"
+client_id = "36c8060b59ff1be62b63d99b08e195f3"
+application_url = "https://incl-its-licensed-blades.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://incl-its-licensed-blades.trycloudflare.com/auth/callback",
+  "https://incl-its-licensed-blades.trycloudflare.com/auth/shopify/callback",
+  "https://incl-its-licensed-blades.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "yousif-app.myshopify.com"
